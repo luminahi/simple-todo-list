@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: burlywood;
+}
+
+.container {
+    width: 50vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    padding-block: 20px;
+}
+
+.all-tasks-todo,
+.all-tasks-done,
+.task-to-add {
+    padding-inline: 20px;
+    margin-bottom: 40px;
+}
+
+.task {
+    border: 2px dashed black;
+    border-left: none;
+    border-top: none;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+}
+
+.task p {
+    flex: 1;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.btn-add,
+.btn-complete,
+.btn-delete {
+    font-weight: bold;
+    width: 48px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    background-color: rgb(255, 132, 132);
+}
+
+.btn-complete {
+    background-color: rgb(164, 255, 164);
+}
+
+.btn-add {
+    background-color: rgb(134, 134, 255);
+}
+
+.task-to-add form {
+    text-align: center;
+}
+
+.task-to-add input[name="task"] {
+    height: 32px;
+    width: 80%;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    align-items: top;
+    justify-content: end;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.modal-body {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    opacity: 0.8;
+    font-size: 24px;
+    font-weight: bold;
+}

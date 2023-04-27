@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Advanced Todo List</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="all-tasks-todo">
+                <h2>Todo</h2>
+                <ul></ul>
+            </div>
+
+            <div class="task-to-add">
+                <form>
+                    <input
+                        type="text"
+                        name="task"
+                        placeholder="task to add..."
+                    />
+                    <input type="submit" class="btn-add" value="+" />
+                </form>
+            </div>
+
+            <div class="all-tasks-done">
+                <h2>Done</h2>
+                <ul></ul>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-body">
+                <p>Task Removed-Added</p>
+            </div>
+        </div>
+
+        <button id="addition">addition</button>
+        <button id="removal">removal</button>
+    </body>
+    <script src="script.js"></script>
+</html>
