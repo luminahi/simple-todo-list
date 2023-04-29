@@ -6,6 +6,11 @@ window.onload = () => {
     const doneList = document.querySelector(".all-tasks-done ul");
     const modal = document.querySelector(".modal");
 
+    if (!localStorage.getItem(0)) {
+        let obj = { quantity: 0, currentId: 0 };
+        localStorage.setItem("0", JSON.stringify(obj));
+    }
+
     const warningManager = new WarningManager(modal);
     const taskManager = new TaskManager(
         localStorage.getItem("0"),
