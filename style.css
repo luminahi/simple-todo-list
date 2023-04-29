@@ -86,26 +86,19 @@ body {
 
 .modal {
     position: absolute;
-    display: flex;
-    opacity: 0;
-    visibility: hidden;
-    align-items: top;
-    justify-content: end;
-    left: 0;
     top: 0;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
+    left: 0;
 }
 
 .modal-body {
-    width: 400px;
+    width: 300px;
     height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 3px;
     opacity: 0.8;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    line-height: 4.5;
+    padding: 0;
+    margin: 10px;
 }
